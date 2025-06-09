@@ -1,6 +1,6 @@
 # Docusaurus Plugin MDC Rules
 
-[![NPM Version](https://img.shields.io/npm/v/docusaurus-plugin-mdc-rules)](#)
+[![NPM Version](https://img.shields.io/npm/v/docusaurus-plugin-mdc-rules)](https://www.npmjs.com/package/docusaurus-plugin-mdc-rules)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-94%2F94-green.svg)](#testing)
 
@@ -30,17 +30,16 @@ A custom Docusaurus plugin that processes `.mdc` files from `.cursor/rules/` dir
 
 ## Installation
 
-Since this is a custom plugin, it's included directly in your Docusaurus project:
+Install the plugin via npm:
 
 ```bash
-# Navigate to the plugin directory
-cd plugins/docusaurus-plugin-mdc-rules
+npm install docusaurus-plugin-mdc-rules
+```
 
-# Install dependencies
-npm install
+Or with yarn:
 
-# Build the plugin
-npm run build
+```bash
+yarn add docusaurus-plugin-mdc-rules
 ```
 
 ## Configuration
@@ -51,7 +50,7 @@ Add the plugin to your `docusaurus.config.ts`:
 export default {
   plugins: [
     [
-      './plugins/docusaurus-plugin-mdc-rules',
+      'docusaurus-plugin-mdc-rules',
       {
         id: 'docusaurus-plugin-mdc-rules',
         sourceDir: '.cursor/rules',

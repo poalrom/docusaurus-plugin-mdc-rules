@@ -12,7 +12,11 @@
     "test:coverage": "jest --coverage",
     "prepublishOnly": "npm test && npm run build",
     "version": "git add -A src",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "clean": "rm -rf build/",
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish"
   },
   "dependencies": {
     "fast-glob": "^3.3.2",
