@@ -4,9 +4,6 @@ import { ContentLoader } from './content-loader';
 import { SidebarGenerator } from './sidebar-generator';
 import { InternalPluginConfig, PluginConfig, PluginData, ProcessingResult, RulePageProps } from './types';
 
-// Export the RulePage component for external use
-export { default as RulePage } from './components/RulePage';
-
 /**
  * Default plugin configuration
  */

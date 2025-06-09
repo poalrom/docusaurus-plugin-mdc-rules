@@ -13,19 +13,31 @@
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "jsx": "react-jsx",
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
     "baseUrl": ".",
     "paths": {
-      "@site/*": ["./"],
-      "@theme/*": ["node_modules/@docusaurus/theme-*"]
-    }
+      "@site/*": [
+        "./"
+      ],
+      "@theme/*": [
+        "node_modules/@docusaurus/theme-*"
+      ]
+    },
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ]
   },
   "include": [
-    "src/**/*",
-    "src/types.d.ts"
+    "src/**/*"
   ],
   "exclude": [
     "node_modules",
     "build"
   ]
-} 
+}
