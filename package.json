@@ -1,6 +1,6 @@
 {
   "name": "docusaurus-plugin-mdc-rules",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Custom Docusaurus plugin for processing .mdc files from .cursor/rules/ into documentation pages",
   "main": "build/index.js",
   "types": "build/index.d.ts",
