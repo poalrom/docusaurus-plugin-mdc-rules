@@ -1,0 +1,43 @@
+# Source files - exclude from package
+src/
+test/
+
+# Development configuration files
+jest.config.js
+tsconfig.json
+.gitignore
+.cursor/
+
+# Development dependencies and tooling
+node_modules/
+.git/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build artifacts and temporary files
+*.log
+*.tmp
+*.temp
+
+# Coverage and test output
+coverage/
+.nyc_output/
+
+# Package files (will be regenerated)
+*.tgz
+package-lock.json
+
+# Documentation source (if different from published docs)
+docs/
+
+# Memory bank (project-specific, not for distribution)
+memory-bank/ 

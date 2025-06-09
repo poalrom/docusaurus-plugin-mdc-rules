@@ -1,0 +1,90 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+title: "Sample Rule for Testing"
+id: "sample-rule"
+description: "A test rule to verify plugin-component integration"
+category: "Testing"
+complexity: "L1"
+tags:
+  - "test"
+  - "integration"
+  - "plugin"
+created: "2024-12-30"
+modified: "2024-12-30"
+author: "Test Suite"
+---
+
+# Sample Rule for Testing
+
+This is a sample rule file created to test the integration between the docusaurus-plugin-mdc-rules plugin and the RulePage component.
+
+## Purpose
+
+This file serves as a test fixture to verify that:
+
+1. The plugin correctly processes .mdc files
+2. The RulePage component receives proper props from plugin data
+3. The component renders correctly with plugin-generated content
+
+## Test Content
+
+### Basic Markdown Features
+
+This section tests basic markdown rendering:
+
+- **Bold text**
+- *Italic text* 
+- `Code snippets`
+- [External link](mdc:https:/example.com)
+
+### Code Block
+
+```typescript
+interface TestInterface {
+  name: string;
+  value: number;
+}
+
+const testFunction = (param: TestInterface): void => {
+  console.log(`Testing: ${param.name} with value ${param.value}`);
+};
+```
+
+### Mermaid Diagram
+
+```mermaid
+graph TD
+    A[Plugin Processes .mdc] --> B[Generates Route]
+    B --> C[RulePage Component]
+    C --> D[Rendered Page]
+    D --> E[User Sees Content]
+```
+
+### Cross-Reference Testing
+
+This section would test internal links if other .mdc files existed:
+
+- Link to another rule: [Related Rule](mdc:related-rule.mdc)
+
+## Expected Behavior
+
+When this file is processed by the plugin and rendered by the RulePage component, it should display:
+
+1. **Metadata Panel**: Showing title, description, category, complexity, tags, and dates
+2. **Content Area**: Rendering all markdown content with proper styling
+3. **Mermaid Diagram**: Interactive diagram rendering
+4. **Navigation**: Proper breadcrumbs and sidebar integration
+5. **Theme Integration**: Consistent with Docusaurus theme styling
+
+## Verification Points
+
+- [ ] Frontmatter metadata displays correctly in component
+- [ ] Markdown content renders with proper styling
+- [ ] Mermaid diagram is interactive and properly styled
+- [ ] Component integrates with Docusaurus theme
+- [ ] Page routing works correctly
+- [ ] CSS modules are loaded properly

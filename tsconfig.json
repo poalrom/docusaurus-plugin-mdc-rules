@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "declaration": true,
+    "outDir": "./build",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-jsx",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "baseUrl": ".",
+    "paths": {
+      "@site/*": ["./"],
+      "@theme/*": ["node_modules/@docusaurus/theme-*"]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "src/types.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
+} 

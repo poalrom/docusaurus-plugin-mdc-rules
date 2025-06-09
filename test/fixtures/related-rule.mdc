@@ -1,0 +1,54 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+title: "Related Test Rule"
+id: "related-rule"
+description: "A second test rule to verify cross-reference linking"
+category: "Testing"
+complexity: "L1"
+tags:
+  - "test"
+  - "cross-reference"
+  - "linking"
+created: "2024-12-30"
+modified: "2024-12-30"
+author: "Test Suite"
+---
+
+# Related Test Rule
+
+This is a related rule file that tests the cross-reference functionality of the plugin.
+
+## Purpose
+
+This file is referenced from [sample-rule.mdc](mdc:sample-rule.mdc) to test:
+
+1. Internal cross-reference resolution
+2. Link processing by the plugin
+3. Navigation between rule pages
+
+## Content
+
+This rule demonstrates that the plugin can:
+
+- Process multiple .mdc files
+- Resolve internal links correctly
+- Generate proper routes for linked content
+- Maintain relationship context between files
+
+## Back Reference
+
+You can return to the main test file: [Sample Rule for Testing](mdc:sample-rule.mdc)
+
+## Test Verification
+
+When testing the plugin-component integration, verify that:
+
+- Links between these files work correctly
+- The plugin processes both files
+- The RulePage component renders linked content properly
+- Navigation maintains proper context
+
