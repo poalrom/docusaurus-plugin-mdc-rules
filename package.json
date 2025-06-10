@@ -2,6 +2,11 @@
   "name": "docusaurus-plugin-mdc-rules",
   "version": "0.0.2",
   "description": "Custom Docusaurus plugin for processing .mdc files from .cursor/rules/ into documentation pages",
+  "homepage": "https://github.com/poalrom/docusaurus-plugin-mdc-rules",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:poalrom/docusaurus-plugin-mdc-rules.git"
+  },
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {

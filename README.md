@@ -256,19 +256,3 @@ MIT License - see LICENSE file for details.
 4. Add tests for new functionality
 5. Ensure all tests pass
 6. Submit a pull request
-
-## Changelog
-
-### v1.0.1
-- **NEW**: Implemented markdown processing using remark/rehype pipeline
-- **IMPROVED**: Markdown content is now converted to HTML for proper rendering
-- **ADDED**: Support for all standard markdown features (headings, formatting, code blocks, lists, links)
-- **ENHANCED**: Graceful error handling with fallback for malformed markdown
-- **FUTURE**: Ready for GFM and Mermaid extensions via remark plugins
-
-### v1.0.0
-- Initial release with full `.mdc` file processing
-- Cross-reference resolution and validation
-- Automatic sidebar generation
-- Comprehensive test coverage
-- TypeScript support 
